@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
     title: `Jeffrey Zhen`,
-    description: `Jeffrey Zhen is a front-end developer with a passion for UX/UI. He specializes in JavaScript, React, and React-Native.`,
+    description: `Jeffrey Zhen is a front-end developer with a passion for UX/UI. He specializes in React, React-Native, Gatsby, and JavaScript.`,
     author: `@jeffreyzhen`,
   },
   plugins: [
