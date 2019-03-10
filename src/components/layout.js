@@ -1,8 +1,14 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { StaticQuery, graphql } from 'gatsby';
+import styled from '@emotion/styled';
 
 import Header from './header';
+import './index.css';
+
+const StyledMain = styled.main`
+  padding-top: 34px;
+`;
 
 const Layout = ({ children }) => (
   <StaticQuery
@@ -19,7 +25,7 @@ const Layout = ({ children }) => (
       <>
         <Header siteTitle={data.site.siteMetadata.title} />
         <div>
-          <main>{children}</main>
+          <StyledMain>{children}</StyledMain>
           <footer>
             © {new Date().getFullYear()}, Built with
             {` `}
