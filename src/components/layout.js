@@ -12,7 +12,7 @@ const GlobalStyle = css`
     --bg-light: #47524f;
     --primary: #00de7b;
     --black: #092545;
-    --blue: #00d6dd;
+    --blue: #2d6ae3;
     --white: #f6fffa;
     --grey: #c8d6df;
     --grey-light: #cae5f5;
@@ -68,11 +68,11 @@ const GlobalStyle = css`
 
   a {
     color: var(--primary);
-    transition: all 0.5s ease-in-out;
+    ${'' /* transition: all 0.5s ease-in-out; */}
     text-decoration: none;
     &:hover,
     &:focus {
-      color: var(--primary);
+      ${'' /* color: var(--primary); */}
     }
   }
 

@@ -19,15 +19,15 @@ const NavbarMenu = styled.div`
   display: flex;
   flex-flow: row nowrap;
   justify-content: space-between;
-  max-width: 400px;
   align-items: center;
+  max-width: 400px;
 `;
 
 const NavbarItem = styled.div`
-  transition: all 0.65s cubic-bezier(0.62, 0.02, 0.34, 1) 1.1s;
+  ${'' /* transition: all 0.65s cubic-bezier(0.62, 0.02, 0.34, 1) 1.1s; */}
   transform: translateX(0px);
-  opacity: 1;
-  visibility: visible;
+  ${'' /* opacity: 1; */}
+  ${'' /* visibility: visible; */}
 `;
 
 const StyledSpan = styled.span`
@@ -35,7 +35,7 @@ const StyledSpan = styled.span`
     content: '';
     position: absolute;
     top: calc(50% - -9px);
-    color: #2d6ae3;
+    color: var(--blue);
     left: 0;
     width: 100%;
     height: 2px;
@@ -44,12 +44,11 @@ const StyledSpan = styled.span`
     transform: scale3d(0, 1, 1);
     transform-origin: 100% 50%;
     transition: transform 0.5s;
-    transition-timing-function: cubic-bezier(0.8, 0, 0.2, 1);
+    ${'' /* transition-timing-function: cubic-bezier(0.8, 0, 0.2, 1); */}
   }
 `;
 
 const StyledLink = styled(Link)`
-  font-size: 14px;
   color: var(--black);
 
   :hover {
@@ -62,53 +61,54 @@ const StyledLink = styled(Link)`
   }
 `;
 
-const StyledAnchor = styled(StyledLink)``;
-
 const StyledLogo = styled(StyledLink)`
   color: var(--grey);
   font-size: 1.5rem;
   font-weight: 700;
   font-family: 'Halcom';
-  transition: all 0.65s cubic-bezier(0.62, 0.02, 0.34, 1) 1s;
+  ${'' /* transition: color 0.65s cubic-bezier(0.62, 0.02, 0.34, 1) 1s; */}
+  transition: color 0.65s;
 
   :hover {
-    color: #235ac5;
-    transition: all ease 0.5s;
-    stroke: #235ac5;
+    color: var(--blue);
   }
 `;
 
-const Header = ({ siteTitle }) => (
-  <StyledHeader>
-    <Nav>
-      <NavbarMenu>
-        <NavbarBrand>
-          <StyledLogo to="/">jZ.</StyledLogo>
-        </NavbarBrand>
-        <NavbarItem>
-          <StyledLink to="">
-            <StyledSpan>Me</StyledSpan>
-          </StyledLink>
-        </NavbarItem>
-        <NavbarItem>
-          <StyledLink to="">
-            <StyledSpan>Work</StyledSpan>
-          </StyledLink>
-        </NavbarItem>
-        <NavbarItem>
-          <StyledLink href="https://medium.com/@jeffreyzhen">
-            <StyledSpan>Blog</StyledSpan>
-          </StyledLink>
-        </NavbarItem>
-        <NavbarItem>
-          <StyledLink to="">
-            <StyledSpan>Resume</StyledSpan>
-          </StyledLink>
-        </NavbarItem>
-      </NavbarMenu>
-    </Nav>
-  </StyledHeader>
-);
+const Header = ({ siteTitle }) => {
+  const StyledAnchor = StyledLink.withComponent('a');
+
+  return (
+    <StyledHeader>
+      <Nav>
+        <NavbarMenu>
+          <NavbarBrand>
+            <StyledLogo to="/">jZ.</StyledLogo>
+          </NavbarBrand>
+          <NavbarItem>
+            <StyledLink to="">
+              <StyledSpan>Me</StyledSpan>
+            </StyledLink>
+          </NavbarItem>
+          <NavbarItem>
+            <StyledLink to="">
+              <StyledSpan>Work</StyledSpan>
+            </StyledLink>
+          </NavbarItem>
+          <NavbarItem>
+            <StyledAnchor href="https://medium.com/@jeffreyzhen">
+              <StyledSpan>Blog</StyledSpan>
+            </StyledAnchor>
+          </NavbarItem>
+          <NavbarItem>
+            <StyledLink to="">
+              <StyledSpan>Resume</StyledSpan>
+            </StyledLink>
+          </NavbarItem>
+        </NavbarMenu>
+      </Nav>
+    </StyledHeader>
+  );
+};
 
 Header.propTypes = {
   siteTitle: PropTypes.string,
