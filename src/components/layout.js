@@ -28,8 +28,7 @@ const GlobalStyle = css`
 
   html {
     font-family: 'Stolzl', 'Halcom', '-apple-system', 'BlinkMacSystemFont',
-      'Segoe UI', 'Roboto', 'Helvetica', 'Arial', 'sans-serif',
-      'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', sans-serif;
+      'Roboto', 'Helvetica', 'sans-serif', 'Apple Color Emoji';
     text-rendering: optimizeLegibility;
     box-sizing: border-box;
     -ms-overflow-style: scrollbar;

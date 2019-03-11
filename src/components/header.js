@@ -86,12 +86,12 @@ const Header = ({ siteTitle }) => {
           </NavbarBrand>
           <NavbarItem>
             <StyledLink to="">
-              <StyledSpan>Me</StyledSpan>
+              <StyledSpan>About</StyledSpan>
             </StyledLink>
           </NavbarItem>
           <NavbarItem>
             <StyledLink to="">
-              <StyledSpan>Work</StyledSpan>
+              <StyledSpan>Experience</StyledSpan>
             </StyledLink>
           </NavbarItem>
           <NavbarItem>
