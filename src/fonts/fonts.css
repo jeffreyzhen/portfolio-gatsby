@@ -1,0 +1,50 @@
+@font-face {
+  font-family: 'Stolzl';
+  font-style: normal;
+  font-weight: 200;
+  font-display: swap;
+  src: url('StolzlLight.woff2') format('woff2'),
+    url('StolzlLight.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Stolzl';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url('StolzlRegular.woff2') format('woff2'),
+    url('StolzlRegular.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Stolzl';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url('StolzlMedium.woff2') format('woff2'),
+    url('StolzlMedium.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Halcom';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url('HalcomMedium.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Halcom';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url('HalcomBold.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Halcom';
+  font-style: normal;
+  font-weight: 900;
+  font-display: swap;
+  src: url('HalcomExtraBold.woff') format('woff');
+}
