@@ -3,8 +3,8 @@ import PropTypes from 'prop-types';
 import { StaticQuery, graphql } from 'gatsby';
 import { Global, css } from '@emotion/core';
 import styled from '@emotion/styled';
-
 import Header from './header';
+import '../fonts/fonts.css';
 
 const GlobalStyle = css`
   :root {
@@ -14,7 +14,7 @@ const GlobalStyle = css`
     --black: #092545;
     --blue: #00d6dd;
     --white: #f6fffa;
-    --grey: #9fb7c7;
+    --grey: #c8d6df;
     --grey-light: #cae5f5;
     --br: 5px;
     --br-big: 10px;
@@ -27,9 +27,9 @@ const GlobalStyle = css`
   }
 
   html {
-    font-family: 'Inter UI', '-apple-system', 'BlinkMacSystemFont', 'Segoe UI',
-      'Roboto', 'Helvetica', 'Arial', 'sans-serif', 'Apple Color Emoji',
-      'Segoe UI Emoji', 'Segoe UI Symbol', sans-serif;
+    font-family: 'Stolzl', 'Halcom', '-apple-system', 'BlinkMacSystemFont',
+      'Segoe UI', 'Roboto', 'Helvetica', 'Arial', 'sans-serif',
+      'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', sans-serif;
     text-rendering: optimizeLegibility;
     box-sizing: border-box;
     -ms-overflow-style: scrollbar;
@@ -41,8 +41,8 @@ const GlobalStyle = css`
   }
 
   body {
-    background: linear-gradient(to top, #172742 0%, #47524f 100%) no-repeat;
-    color: var(--white);
+    ${'' /* background: linear-gradient(to top, #172742 0%, #47524f 100%) no-repeat; */}
+    ${'' /* color: var(--white); */}
     margin: 0;
     padding: 0;
     border-bottom: 1px solid var(--bg-dark);
