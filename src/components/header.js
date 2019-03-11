@@ -23,26 +23,87 @@ const NavbarMenu = styled.div`
   align-items: center;
 `;
 
-const NavbarItem = styled.div``;
+const NavbarItem = styled.div`
+  transition: all 0.65s cubic-bezier(0.62, 0.02, 0.34, 1) 1.1s;
+  transform: translateX(0px);
+  opacity: 1;
+  visibility: visible;
+`;
+
+const StyledSpan = styled.span`
+  ::before {
+    content: '';
+    position: absolute;
+    top: calc(50% - -9px);
+    color: #2d6ae3;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    pointer-events: none;
+    background: currentColor;
+    transform: scale3d(0, 1, 1);
+    transform-origin: 100% 50%;
+    transition: transform 0.5s;
+    transition-timing-function: cubic-bezier(0.8, 0, 0.2, 1);
+  }
+`;
+
+const StyledLink = styled(Link)`
+  font-size: 14px;
+  color: var(--black);
+
+  :hover {
+    color: var(--black);
+
+    ${StyledSpan}::before {
+      transform: scale3d(1, 1, 1);
+      transform-origin: 0% 50%;
+    }
+  }
+`;
+
+const StyledAnchor = styled(StyledLink)``;
+
+const StyledLogo = styled(StyledLink)`
+  color: var(--grey);
+  font-size: 1.5rem;
+  font-weight: 700;
+  font-family: 'Halcom';
+  transition: all 0.65s cubic-bezier(0.62, 0.02, 0.34, 1) 1s;
+
+  :hover {
+    color: #235ac5;
+    transition: all ease 0.5s;
+    stroke: #235ac5;
+  }
+`;
 
 const Header = ({ siteTitle }) => (
   <StyledHeader>
     <Nav>
       <NavbarMenu>
         <NavbarBrand>
-          <Link to="/">Icon</Link>
+          <StyledLogo to="/">jZ.</StyledLogo>
         </NavbarBrand>
         <NavbarItem>
-          <Link to="">Me</Link>
+          <StyledLink to="">
+            <StyledSpan>Me</StyledSpan>
+          </StyledLink>
         </NavbarItem>
         <NavbarItem>
-          <Link to="">Work</Link>
+          <StyledLink to="">
+            <StyledSpan>Work</StyledSpan>
+          </StyledLink>
         </NavbarItem>
         <NavbarItem>
-          <a href="https://medium.com/@jeffreyzhen">Blog</a>
+          <StyledLink href="https://medium.com/@jeffreyzhen">
+            <StyledSpan>Blog</StyledSpan>
+          </StyledLink>
         </NavbarItem>
         <NavbarItem>
-          <Link to="">Resume</Link>
+          <StyledLink to="">
+            <StyledSpan>Resume</StyledSpan>
+          </StyledLink>
         </NavbarItem>
       </NavbarMenu>
     </Nav>
