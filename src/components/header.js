@@ -62,9 +62,14 @@ const StyledLink = styled(Link)`
 `;
 
 const StyledLogo = styled(StyledLink)`
+  ::before,
+  ::after {
+    content: '\00a0';
+  }
+
   color: var(--grey);
   font-size: 1.5rem;
-  font-weight: 700;
+  font-weight: 900;
   font-family: 'Halcom';
   ${'' /* transition: color 0.65s cubic-bezier(0.62, 0.02, 0.34, 1) 1s; */}
   transition: color 0.65s;
