@@ -5,10 +5,9 @@ import styled from '@emotion/styled';
 import GlobalStyles from './global';
 import Header from './header';
 
-const StyledMain = styled.main`
+const Main = styled.main`
   /* padding-top: 34px; */
   width: 100%;
-  counter-reset: section 0;
   margin: 0px auto;
   padding: 0px 150px;
 `;
@@ -28,7 +27,7 @@ const Layout = ({ children }) => (
       <>
         <GlobalStyles />
         <Header siteTitle={data.site.siteMetadata.title} />
-        <StyledMain>{children}</StyledMain>
+        <Main>{children}</Main>
         {/* <footer>
             © {new Date().getFullYear()}, Built with
             {` `}

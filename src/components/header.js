@@ -24,10 +24,10 @@ const NavbarMenu = styled.div`
 `;
 
 const NavbarItem = styled.div`
-  ${'' /* transition: all 0.65s cubic-bezier(0.62, 0.02, 0.34, 1) 1.1s; */}
+  /* transition: all 0.65s cubic-bezier(0.62, 0.02, 0.34, 1) 1.1s; */
   transform: translateX(0px);
-  ${'' /* opacity: 1; */}
-  ${'' /* visibility: visible; */}
+  /* opacity: 1; */
+  /* visibility: visible; */
 `;
 
 const StyledSpan = styled.span`

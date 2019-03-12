@@ -40,7 +40,7 @@ const style = css`
     ${'' /* color: var(--white); */}
     margin: 0;
     padding: 0;
-    border-bottom: 1px solid var(--bg-dark);
+    ${'' /* border-bottom: 1px solid var(--bg-dark); */}
     min-height: 100vh;
   }
 
