@@ -8,13 +8,13 @@ import '../fonts/fonts.css';
 
 const GlobalStyle = css`
   :root {
+    --black: black;
+    --blue: #2d6ae3;
+    --grey: #c8d6df;
     --bg-dark: #172742;
     --bg-light: #47524f;
     --primary: #00de7b;
-    --black: #092545;
-    --blue: #2d6ae3;
     --white: #f6fffa;
-    --grey: #c8d6df;
     --grey-light: #cae5f5;
     --br: 5px;
     --br-big: 10px;
@@ -101,11 +101,11 @@ const Layout = ({ children }) => (
         <Header siteTitle={data.site.siteMetadata.title} />
         <div>
           <StyledMain>{children}</StyledMain>
-          <footer>
+          {/* <footer>
             © {new Date().getFullYear()}, Built with
             {` `}
             <a href="https://www.gatsbyjs.org">Gatsby</a>
-          </footer>
+          </footer> */}
         </div>
       </>
     )}
