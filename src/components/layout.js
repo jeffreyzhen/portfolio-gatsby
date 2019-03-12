@@ -8,7 +8,7 @@ import '../fonts/fonts.css';
 
 const GlobalStyle = css`
   :root {
-    --black: black;
+    --black: #092545;
     --blue: #2d6ae3;
     --grey: #c8d6df;
     --bg-dark: #172742;
