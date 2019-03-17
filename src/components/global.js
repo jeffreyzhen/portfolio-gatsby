@@ -29,9 +29,9 @@ const style = css`
     box-sizing: border-box;
     -ms-overflow-style: scrollbar;
     -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-    font-size: 18px;
-    @media (max-width: 600px) {
-      font-size: 16px;
+    font-size: 16px;
+    @media (min-width: 600px) {
+      font-size: 18px;
     }
   }
 
