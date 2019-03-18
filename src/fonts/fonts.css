@@ -48,3 +48,30 @@
   font-display: swap;
   src: url('HalcomExtraBold.woff') format('woff');
 }
+
+@font-face {
+  font-family: 'Calibre';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url('CalibreRegular.woff2') format('woff2'),
+    url('CalibreRegular.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Calibre';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url('CalibreSemibold.woff2') format('woff2'),
+    url('CalibreSemibold.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'San Francisco';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url('SFMonoRegular.woff2') format('woff2'),
+    url('SFMonoRegular.woff') format('woff');
+}
