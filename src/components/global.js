@@ -1,5 +1,6 @@
 import React from 'react';
 import { Global, css } from '@emotion/core';
+import device from './device';
 import '../fonts/fonts.css';
 
 const style = css`
@@ -7,6 +8,8 @@ const style = css`
     --black: #092545;
     --blue: #2d6ae3;
     --grey: #c8d6df;
+    --red: #da5050;
+    --purple: #8c43ff;
     --bg-dark: #172742;
     --bg-light: #47524f;
     --primary: #00de7b;
@@ -23,16 +26,15 @@ const style = css`
   }
 
   html {
-    font-family: 'Stolzl', 'Halcom', '-apple-system', 'BlinkMacSystemFont',
-      'Roboto', 'Helvetica', 'sans-serif', 'Apple Color Emoji';
+    font-family: 'Stolzl', 'Halcom', 'Calibre', 'San Francisco', 'SF Pro Text',
+      -apple-system, system-ui, BlinkMacSystemFont, Roboto, 'Helvetica Neue',
+      'Segoe UI', Arial, sans-serif;
     text-rendering: optimizeLegibility;
     box-sizing: border-box;
     -ms-overflow-style: scrollbar;
     -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-    font-size: 16px;
-    @media (min-width: 600px) {
-      font-size: 18px;
-    }
+    font-size: 18px;
+    ${device.phoneXL`font-size: 20px;`}
   }
 
   body {
@@ -42,18 +44,19 @@ const style = css`
     padding: 0;
     ${'' /* border-bottom: 1px solid var(--bg-dark); */}
     min-height: 100vh;
+    line-height: 1.3;
   }
 
   h1 {
-    font-size: 2rem;
+    font-size: 2.75rem;
   }
 
   h2 {
-    font-size: 1.5rem;
+    font-size: 2rem;
   }
 
   h3 {
-    font-size: 1.17rem;
+    font-size: 1.5rem;
   }
 
   ::selection {
@@ -62,7 +65,7 @@ const style = css`
   }
 
   a {
-    color: var(--primary);
+    color: var(--blue);
     ${'' /* transition: all 0.5s ease-in-out; */}
     text-decoration: none;
     &:hover,
