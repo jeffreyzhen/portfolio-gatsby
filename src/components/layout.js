@@ -11,9 +11,18 @@ const Main = styled.main`
   width: 100%;
   margin: 0px auto;
   padding: 0 25px;
-  ${device.phoneXL`padding: 0 50px`}
-  ${device.tablet`padding: 0 100px`}
-  ${device.desktop`padding: 0 150px`}
+
+  ${device.phoneXL} {
+    padding: 0 50px;
+  }
+
+  ${device.tablet} {
+    padding: 0 100px;
+  }
+
+  ${device.desktop} {
+    padding: 0 150px;
+  }
 `;
 
 const Layout = ({ children }) => (

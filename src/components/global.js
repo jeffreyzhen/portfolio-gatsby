@@ -34,7 +34,10 @@ const style = css`
     -ms-overflow-style: scrollbar;
     -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
     font-size: 18px;
-    ${device.phoneXL`font-size: 20px;`}
+
+    ${device.phoneXL} {
+      font-size: 20px;
+    }
   }
 
   body {

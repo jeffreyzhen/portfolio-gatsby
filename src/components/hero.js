@@ -11,7 +11,10 @@ const Section = styled.section`
   min-height: 100vh;
   margin: 0 auto;
   padding: 150px 0 100px;
-  ${device.tablet`padding: 150px 0;`}
+
+  ${device.tablet} {
+    padding: 150px 0;
+  }
 `;
 
 const Div = styled.div`
@@ -23,9 +26,16 @@ const Name = styled.h1`
   font-weight: 600;
   margin: 0;
   line-height: 1.1;
-  ${device.phoneXL`font-size: 3rem`}
-  ${device.tablet`font-size: 3.5rem`}
-  ${device.desktop`font-size: 4rem;`}
+
+  ${device.phoneXL} {
+    font-size: 3rem;
+  }
+  ${device.tablet} {
+    font-size: 3.5rem;
+  }
+  ${device.desktop} {
+    font-size: 4rem;
+  }
 `;
 
 const Statement = styled(Name)`
