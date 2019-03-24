@@ -50,6 +50,7 @@ const StyledSpan = styled.span`
 
 const StyledLink = styled(Link)`
   color: var(--black);
+  font-family: 'Stolzl';
 
   :hover {
     color: var(--black);

@@ -26,7 +26,7 @@ const style = css`
   }
 
   html {
-    font-family: 'Stolzl', 'Halcom', 'Calibre', 'San Francisco', 'SF Pro Text',
+    font-family: 'Calibre', 'Stolzl', 'Halcom', 'San Francisco', 'SF Pro Text',
       -apple-system, system-ui, BlinkMacSystemFont, Roboto, 'Helvetica Neue',
       'Segoe UI', Arial, sans-serif;
     text-rendering: optimizeLegibility;
@@ -78,6 +78,13 @@ const style = css`
       outline: none;
       ${'' /* color: var(--primary); */}
     }
+  }
+
+  ul,
+  ol {
+    padding: 0;
+    margin: 0;
+    list-style: none;
   }
 
   .hidden {
