@@ -62,17 +62,20 @@ const style = css`
     font-size: 1.5rem;
   }
 
+  ${'' /*
   ::selection {
     color: var(--white);
     background-color: var(--primary);
   }
+   */}
 
   a {
+    text-decoration: none;
     color: var(--blue);
     ${'' /* transition: all 0.5s ease-in-out; */}
-    text-decoration: none;
     &:hover,
     &:focus {
+      outline: none;
       ${'' /* color: var(--primary); */}
     }
   }

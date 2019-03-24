@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from '@emotion/styled';
 import device from './device';
+import LinkStyledAsButton from './LinkStyledAsButton';
 
 const Section = styled.section`
   display: flex;
@@ -74,10 +75,9 @@ const Hero = () => (
           as an Associate Engineer.
         </P>
       </div>
-      {/* hi my name is */}
-      {/* jeffrey zhen */}
-      {/* i build things */}
-      {/* blurb */}
+      <LinkStyledAsButton href="mailto:jeffrey.y.zhen@gmail.com">
+        Get In Touch
+      </LinkStyledAsButton>
     </Div>
   </Section>
 );
